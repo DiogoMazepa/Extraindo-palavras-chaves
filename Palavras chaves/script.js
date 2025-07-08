@@ -1,3 +1,6 @@
+<script type="module" src="script.js"></script>
+import { PALAVRAS_RUINS } from "./palavrasRuins.js";
+
 const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
 
 botaoMostraPalavras.addEventListener("click", mostraPalavrasChave);
@@ -43,7 +46,6 @@ function contaFrequencias(palavras) {
 }
 
 function tiraPalavrasRuins(palavras) {
-  const PALAVRAS_RUINS = new Set(["para", "uma", "nós"]);
 
   const palavrasBoas = [];
 
